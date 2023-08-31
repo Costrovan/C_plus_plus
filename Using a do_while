@@ -1,0 +1,24 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    // Local variable declaration:
+    int num;
+    cout << "insert any value from 0 to 5";
+    cin >> num;
+
+    // using a do loop execution
+    do
+    {
+        cout << "value of number: " << num << endl;
+        num++;
+        if (num > 5)
+        {
+            // terminate the loop
+            break;
+        }
+    } while (num < 10);
+// will display only up to 5 because that is where the "break" of the loop is done
+    return 0;
+}
