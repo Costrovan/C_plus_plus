@@ -1,0 +1,37 @@
+/* You have a box of popsicles and you want to give them all away to a group of brothers and sisters. If you have enough left in the box to give them each an even amount you
+should go for it! if not, they will fight over them, and you should eat them yourself later.
+
+Task: Given a number of siblings that you are giving popsicles to, determine if you can give them each an even emount or if you shouldn't mention the posicles at all.
+
+Input Format:
+Two integer values, the first one represents the number of siblings, and the second one represents the number of popsicles that you have left in the box.
+
+Output Format:
+A String that says  "give away" if you are giving them away, or "eat them yourself" if you will be eating them yourself.
+
+Sample Input: 3 9
+
+Sample Output: "give away"
+*/
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+  int siblings, popsicles;
+
+// take the 2 input values:
+
+   cin >> siblings >> popsicles;
+
+//checking if you can divide the number of popsicles equaly among the siblings:
+
+if (popsicles % siblings == 0)
+    cout<<"give away";
+else
+    cout<<"eat them yourself";
+
+return 0;
+
+}
