@@ -1,0 +1,66 @@
+/*
+You and three friends go to a baseball game and you offer to go to the concession stand for everyone. They each order one thing, and you do as well. Nachos and Pizza both cost
+$6.00. A Cheeseburger meal costs $10. Water is $4.00 and Coke is $5.00. Tax is 7%.
+
+Task:
+Determine the total cost of ordering 4 items from the concession stand. If one of your friend's orders something that isn't on the menu, you will order a Coke for them instead.
+
+Input Format:
+You are given a string of the four items that you've been asked to order that are separated by spaces.
+
+Output Format:
+You will output a number of the total cost of the food and drinks.
+
+Sample INPUT: 'Pizza Cheeseburger Water Popcorn'
+Sample OUTPUT: 26.75
+
+Explanation: 
+Because Popcorn is not on the menu, this friend gets a coke which brings the subtotal to $25.00 and $26.75 with tax.
+*/
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main()
+{
+  string menu;
+  int orders = 0;
+  double price = 0;
+  do{
+      if(menu == "Nachos")
+      {
+          price += 6.00;
+          orders++;
+      }
+      else if(menu == "Pizza")
+      {
+          price += 6.00;
+          orders++;
+      }
+      else if(menu == "Cheeseburger")
+      {
+          price += 10.00;
+          orders++;
+      }
+      else if(menu == "Water")
+      {
+          price += 4.00;
+          orders++;
+      }
+      else if(menu == "Coke")
+      {
+          price += 5.00;
+          orders++;
+      }
+      else
+      {
+          price += 5.00;
+          orders++;
+      }
+  }while(orders<4);
+
+price = price + price *0.07;
+cout<<price;
+return 0;
+}
