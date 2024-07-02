@@ -1,0 +1,34 @@
+/*
+You are in a hat store in Argentina! The prices are listed in US Dollars and Argentinian Pesos. You have both, but you want to make sure you pay the lower price! Do you pay in
+Dollars or Pesos? The exchange rate is 2 cents for every Peso.
+
+TASK:
+Create a program that takes two prices and tells you which one is lower after conversion.
+
+Input Format:
+Two integer values, the first one is the price in PEsos and the second one is the price in Dollars.
+
+Output Format:
+A string that says which currency you should make the purchase in ("Dollars" or "Pesos").
+
+Sample Input: 4000  100
+
+Sample Output: "Pesos"
+
+Explanation:
+You should use Pesos to buy that hat since 4000 pesos is equal to $80.
+*/
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+  int dollar, peso;
+  cin >> peso >> dollar;
+  if (dollar * 50 > peso)
+    cout << "Pesos";
+  else
+    cout << "Dollars";
+return 0;
+}
