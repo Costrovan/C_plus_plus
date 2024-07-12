@@ -1,0 +1,46 @@
+/*
+You want to completely cover a flat door on both sides with duct tape. You need to know how many rolls of duct tape to buy when you go to the store.
+
+TASK:
+Given the height and width of the door, determine how many rolls of duct tape you will need (a roll of duct taope is 60 feet long and 2 inches wide and there are 12 inches
+in each food). Don't forget both sides of the door!
+
+Input FORMAT:
+Two integers that represent the height and width of the door.
+
+Output FORMAT:
+An integer that represents the total rolls of duct tape that you need to buy.
+
+SAMPLE INPUT:
+7
+4
+
+SAMPLE OUTPUT:
+6 rolls
+
+Explanation:
+You will need 6 rolls of duct tape to cover both sides of the 7ft x 4ft door.
+*/
+
+#include<iostream>
+#including<cmath>
+using namespace std;
+
+int main()
+{
+  int width, height;
+  float duct_tape = 60 * 2/12;
+  float number_rolls;
+  cin>>width>>height;
+
+  float door_area = 2 * width * height;
+
+  number_rolls =  ceil(door_area / duct_tape);
+
+  cout << number_rolls << " rolls";
+  
+  return 0;
+}
+
+/* We need the "cmath" library to use the ceil('ceiling') command in the program. Otherwise we would have to work a way around the function.
+*/
