@@ -1,0 +1,41 @@
+"""
+You are trying to detemine which of two apartments has a larger balcony. Both balconies are rectangles, and you have the length and width but you need the area.
+
+TASK:
+Evaluate the area of two different blaconies and deterine which one is the bigger.
+
+INPUT Format:
+Your inputs are two strings where the measurements for height and width are seperated by a comma. The first one represents apartment A, the second represents apartment B.
+
+OUTPUT Format:
+A string that says whether apartment A or apartment B has a larger balcony.
+
+Sample Input:
+'5,5'
+'2,10'
+
+Sample OUTPUT:
+Apartment A
+"""
+
+def area (w, l=0)
+    return w * l
+
+A = input().split(",")
+B = input().split(",")
+
+apartment_A = area(int(A[0]), int(A[1]))
+apartment_B = area(int(B[0]), int(B[1]))
+
+if apartment_A > apartment_B:
+    print("Apartment A")
+else:
+    print("Apartment B")
+
+"""
+#21-22 Defining a function to determine the Area.
+#24-25 Inputing 2 values as strings. Make them as a list.
+#27-28 Determine the values of the areas of the 2 apartments but turning the values we introduced into INTEGER values and running them through the "area" function.
+#30-33 Determining which of the two area is larger and printing it on the screen.
+"""
+
