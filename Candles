@@ -1,0 +1,40 @@
+/*
+It is almost Hanukkah and the store in your town is completely out of candles! You decide an order online, and you talk to your freinds to see who else needs candles. How many
+candles should you order in total for the holiday?
+
+Task:
+Determine how many candles you need to order based on how many friends ask to join your order(each friend will need 9 candles)
+
+INPUT format:
+An integer that represents the number of friends that ask to order candles with you.
+
+OUTPUT format:
+An integer that represents the total number of candles that you need to order.
+
+Sample INPUT:
+4
+
+Sample OUTPUT:
+45
+
+Explanation: 
+If four of your friends ask you to order their candles for them , you will need 9 for eah of them and 9 for yourself. That is 45
+*/
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+  int friends, c=0;
+  cin >> friends;
+  do{
+      c+=9;
+      friends--;
+  }while(friends>=0);
+  cout<<c;
+  return 0;
+}
+
+/* Using the "do-while" will run the code according to the number of friends+1. We do this to include the person who orders as to not coplicate the code for other users.
+*/
